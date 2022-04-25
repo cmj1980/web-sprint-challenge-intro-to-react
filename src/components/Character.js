@@ -6,10 +6,10 @@ const Character = props => {
     return (
         <div className="character">
             <h3>{props.info.name}</h3>
-            
-            
-
-        </div>
+            <button onClick={() => props.open(props.info.id)}>
+               See Profile
+            </button>
+         </div>
     )
 }
 export default Character;
